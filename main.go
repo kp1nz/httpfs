@@ -12,7 +12,7 @@ var dir string
 var port string
 
 func init() {
-	flag.StringVar(&port, "p", "8100", "port to serve on")
+	flag.StringVar(&port, "p", "555", "port to serve on")
 	flag.StringVar(&dir, "path", "./", "the directory of static file to host")
 	flag.Parse()
 	if dir == "./" {

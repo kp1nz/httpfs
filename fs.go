@@ -42,14 +42,14 @@ body {
 	height: 100%;
 }
 #drop-area {
-    border: 2px dashed #ccc;
+    border: 8px dashed #ccc;
     border-radius: 20px;
     margin: 10px auto;
     padding: 20px;
-    height: 100%;
+    height: 88%;
 }
 #drop-area.highlight {
-    border-color: purple;
+    border-color: black;
 }
 #fileElem {
     display: none;
@@ -69,6 +69,7 @@ progress {
 <body>
 	<progress id="progress" value="0" max="100"></progress>
     <div id="drop-area">
+	<h1 style="margin-left:88px">Drag And Drop ↓</h1>
         <pre>
         {{range $href, $name := . }}
             <a href="{{$href}}">{{$name}}</a>
